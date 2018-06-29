@@ -4,12 +4,8 @@ import "fmt"
 
 func main() {
 
-	defer func() {
-		str := recover()
-		fmt.Println(str)
-	} ()
+	fmt.Println(fib(5))
 
-	panic("Panicc")
 
 }
 
